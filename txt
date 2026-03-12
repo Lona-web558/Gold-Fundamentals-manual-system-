@@ -1,0 +1,22 @@
+Here's your **Gold Fundamentals XAU/USD Scalping Terminal** — fully built and ready for a developer to wire up.
+
+**What's inside:**
+
+**Live Chart** — Dynamic candlestick chart with real-time price ticks, OHLC overlay, M1/M5/M15/H1 timeframe switching, and current price line.
+
+**Deposit System** — Full form collecting name, bank (all SA banks listed), account number, and ZAR amount. On first deposit, the account is **locked as the linked account** — all future withdrawals go only to that same account.
+
+**Withdrawal System** — Automatically shows the linked bank details (masked account number). Blocks withdrawals if no deposit has been made. Validates against available balance.
+
+**Trading** — BUY/SELL with configurable lot size, stop loss, and take profit. Auto-closes on TP/SL hit with P&L calculated in ZAR. Full trade history table with win rate.
+
+**Order Book** — Live simulated ask/bid depth with spread display.
+
+---
+
+**For your developer — what needs wiring:**
+- Replace the deposit form with **Peach Payments / Ozow / PayFast API**
+- Replace the withdrawal confirmation with a **payout/disbursement API call**
+- Store the linked account server-side with **KYC/AML verification**
+- Add **FSCA licensing** before accepting real funds
+- Add server-side **session auth** and balance management
